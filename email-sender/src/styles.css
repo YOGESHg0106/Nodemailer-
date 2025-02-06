@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    width: 100vw;
+  }
+  
+  /* Main Container */
+  .container {
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Heading */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form Inputs */
+  .email-form input,
+  .email-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Submit Button */
+  .email-form button {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .email-form button:hover {
+    background: #218838;
+  }
+  
+  /* Status Messages */
+  .status {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .success {
+    background: #28a745;
+    color: white;
+  }
+  
+  .error {
+    background: #dc3545;
+    color: white;
+  }
+  
+  /* 🔹 Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    .email-form input,
+    .email-form textarea {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .email-form button {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+      border-radius: 10px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .email-form input,
+    .email-form textarea {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .email-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
