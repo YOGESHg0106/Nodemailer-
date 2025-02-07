@@ -18,7 +18,10 @@ const EmailForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/send-email", emailData);
+      await axios.post(
+        "https://nodemailer-production.up.railway.app/send-email",
+        emailData
+      );
       setStatus({ message: "✅ Email Sent Successfully!", type: "success" });
     } catch (error) {
       setStatus({ message: "❌ Failed to Send Email.", type: "error" });

@@ -1,13 +1,12 @@
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  plugins: [react()],
+  base: "./", // Ensure correct relative path
   server: {
     proxy: {
-      "/send-email": {
-        target: "https://nodemailer-production.up.railway.app", // Ensure it's a valid URL
-        changeOrigin: true,
-        secure: false,
-      },
+      "/send-email": "https://nodemailer-production.up.railway.app", // Ensure the correct backend URL
     },
   },
 });
