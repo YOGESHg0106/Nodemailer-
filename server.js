@@ -2,6 +2,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 const cors = require("cors"); // Allow frontend to access the backend
+require("dotenv").config();
 
 const app = express();
 const PORT = 5000;
